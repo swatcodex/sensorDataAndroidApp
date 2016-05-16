@@ -1,0 +1,123 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+
+    android:isScrollContainer="true"
+    android:overScrollMode="always"
+    android:scrollbarAlwaysDrawVerticalTrack="true"
+    android:scrollbarStyle="outsideInset"
+    android:scrollbars="vertical" 
+    android:background="#000000"
+>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" 
+    >
+
+    <Button
+        android:id="@+id/temperature"
+        style="@style/AppTheme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+
+        android:background="#000000"
+        android:drawableLeft="@drawable/temp"
+        android:gravity="left|center_vertical"
+        android:onClick="@string/displayTemperature"
+        android:text="Temperature"
+        android:textColor="@android:color/white" />
+   
+   <View
+ android:layout_width="match_parent"
+ android:layout_height="1dp"
+ android:background="#808080" 
+ android:id="@+id/line1"
+ android:layout_below="@+id/temperature"/>
+    
+ <Button
+     android:id="@+id/pulse"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_alignParentLeft="true"
+     android:layout_alignParentRight="true"
+     android:layout_below="@+id/line1"
+     android:background="#000000"
+     android:drawableLeft="@drawable/pulse"
+     android:gravity="left|center_vertical"
+     android:onClick="@string/displayPulse"
+     android:text="Pulse Rate"
+     android:textColor="@android:color/white" />
+
+  <View
+ android:layout_width="match_parent"
+ android:layout_height="1dp"
+ android:background="#808080" 
+ android:id="@+id/line2"
+ android:layout_below="@+id/pulse"/>
+ 
+    <Button
+        android:id="@+id/bloodPressure"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/line2"
+        android:background="#000000"
+        android:drawableLeft="@drawable/blood"
+        android:gravity="left|center_vertical"
+        android:onClick="@string/displayBloodPressure"
+        android:text="Blood Pressure"
+        android:textColor="@android:color/white" />
+
+<View
+ android:layout_width="match_parent"
+ android:layout_height="1dp"
+ android:background="#808080" 
+ android:id="@+id/line3"
+ android:layout_below="@+id/bloodPressure"/>
+
+
+
+
+    <Button
+        android:id="@+id/summary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/line3"
+        android:background="#000000"
+        android:drawable="@drawable/shape"
+        android:drawableLeft="@drawable/summary"
+        android:gravity="left|center_vertical"
+        android:onClick="@string/summary"
+        android:text="    Summary"
+        android:textColor="@android:color/white" />
+
+<View
+ android:layout_width="match_parent"
+ android:layout_height="1dp"
+ android:background="#808080" 
+ android:id="@+id/line4"
+ android:layout_below="@+id/summary"/>
+
+    <Button
+        android:id="@+id/exit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/line4"
+        android:background="#000000"
+        android:drawable="@drawable/shape"
+        android:drawableLeft="@drawable/exit"
+        android:gravity="left|center_vertical"
+        android:onClick="@string/exit"
+        android:text="@string/exit"
+        android:textColor="@android:color/white" />
+    </RelativeLayout>
+</ScrollView>
+

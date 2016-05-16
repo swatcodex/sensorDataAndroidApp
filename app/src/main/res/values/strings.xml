@@ -1,0 +1,26 @@
+<resources>
+
+    <string name="app_name">Sensor Hotspot - Version 2.1</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_main">Sensor Hotspot_V2.1</string>
+    <string name="pulse"> Pulse Rate</string>
+    <string name="Temperature">    Temperature</string>
+    <string name="bloodPressure">Blood Pressure</string>
+    <string name="displayTemperature">displayTemperature</string>
+     <string name="displayPulse">displayPulse</string>
+     <string name="displayBloodPressure">displayBloodPressure</string>
+     <string name="exit">exit</string>
+     <string name="nopackets">No DATA Packets Received</string>
+      <string name="voltagetext">Voltage</string>
+      <string name="currenttext">Current</string>
+      <string name="powertext">Power</string>
+      <string name="frequencytext">Frequency</string>
+      <string name="energytext">Energy</string>
+      <string name="powerfactortext">Power Factor</string>
+      <string name="powerrecvtime">Time Received</string>
+      <string name="Summary">Summary</string>
+      <string name="summary">summary</string>
+      
+
+</resources>

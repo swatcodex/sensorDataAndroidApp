@@ -1,0 +1,78 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_marginLeft="@dimen/padding_small"
+    android:isScrollContainer="true"
+    android:overScrollMode="always"
+    android:scrollbarAlwaysDrawVerticalTrack="true"
+    android:scrollbarStyle="outsideInset"
+    android:scrollbars="vertical" 
+    
+>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" 
+    >
+
+
+    <Button
+        android:id="@+id/temperature_value"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="@dimen/padding_large"
+        android:background="#1A1A1A"
+         android:drawableLeft="@drawable/blank"
+        android:gravity="left|center_vertical"
+        android:textColor="@android:color/white" />
+   
+   <View
+ android:layout_width="match_parent"
+ android:layout_height="1dp"
+ android:background="#808080" 
+ android:id="@+id/bar1"
+ android:layout_below="@+id/temperature_value"/>
+    
+ <Button
+     android:id="@+id/pulseValue"
+     android:layout_width="wrap_content"
+     android:layout_height="60dp"
+     android:layout_alignParentLeft="true"
+     android:layout_alignParentRight="true"
+     android:layout_below="@+id/bar1"
+     android:background="#1A1A1A"
+      android:drawableLeft="@drawable/blank"
+    android:gravity="left|center_vertical"
+     android:textColor="@android:color/white" />
+
+  <View
+ android:layout_width="match_parent"
+ android:layout_height="1dp"
+ android:background="#808080" 
+ android:id="@+id/bar2"
+ android:layout_below="@+id/pulseValue"/>
+ 
+    <Button
+        android:id="@+id/bloodValue"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/bar2"
+        android:background="#1A1A1A"
+      android:gravity="left|center_vertical"
+       android:drawableLeft="@drawable/blank"
+        android:textColor="@android:color/white" />
+
+<View
+ android:layout_width="match_parent"
+ android:layout_height="1dp"
+ android:background="#808080" 
+ android:id="@+id/bar3"
+ android:layout_below="@+id/bloodValue"/>
+
+</RelativeLayout>
+</ScrollView>
+
